@@ -1,0 +1,23 @@
+{
+  "name": "ps-bur-3",
+  "description": "company website for drilling wells",
+  "main": "index.js",
+  "authors": [
+    "Odinokun"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Odinokun/ps-bur-3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.1.4",
+    "normalize-css": "normalize.css#^4.1.1",
+  },
+  "devDependencies": {}
+}
