@@ -11,13 +11,12 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "app/libs/",
+    "app/bower_components/",
     "test",
     "tests"
   ],
   "dependencies": {
-    "jquery": "2.1.4",
-    "normalize-css": "normalize.css#^4.1.1",
-  },
-  "devDependencies": {}
+    "jquery": "2.1.0",
+    "normalize-css": "normalize.css#^4.2.0"
+  }
 }

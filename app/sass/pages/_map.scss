@@ -1,0 +1,402 @@
+.map_deeps_container * {
+    font-family: Myriad Pro, Arial;
+}
+
+.map_deeps_container {
+    float: left;
+    width: 100%;
+    height: 838px;
+    background: url(images/bg_map_deeps.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+.map_deeps_content {
+    display: inline-block;
+    width: 100%;
+    height: 798px;
+    /*background: url(images/map_deeps.png) no-repeat center 140px;*/
+}
+
+.map_deeps_content > .title {
+    display: inline-block;
+    width: 100%;
+    margin-top: 70px;
+    text-align: left;
+}
+
+.map_deeps_content > .title h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #34495e;
+}
+
+.map_deeps_content > .title span {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+    text-align: left;
+    color: #34495e;
+}
+/********************************** ÐšÐ°Ñ€Ñ‚Ð° Ð³Ð»ÑƒÐ±Ð¸Ð½ *************************************/
+
+/********************************** ÐšÐ°Ñ€Ñ‚Ð° *************************************/
+.map_container {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 490px;
+}
+
+.map_container .map_shadow {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42px;
+    background: url(images/bg_map.png) no-repeat top center;
+    background-size: cover;
+}
+
+#map {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/***************************** codepen **********************************/
+#fl {
+    font-size: 12px;
+    float: left;
+    width: 300px;
+    height: 25px;
+    padding: 40px 0 0 10px;
+    color: pink;
+}
+#fr {
+    font-size: 12px;
+    float: right;
+    width: 300px;
+    padding: 30px 0 0 0;
+    text-align: right;
+    color: pink;
+}
+.fbimg {
+    padding: 15px;
+}
+#footer a {
+    padding-top: 4px;
+    color: #pink;
+}
+// #kiwi1, #kiwi2, #kiwi3, #kiwi4, #kiwi5, #kiwi6, #kiwi7, #kiwi8, #kiwi9, #kiwi10, #kiwi11, #kiwi12, #kiwi13, #kiwi14, #kiwi15, #kiwi16, #kiwi17, #kiwi18 {
+//   fill: pink;
+//   fillcolor: pink;
+//   stroke-opacity: 0;
+//   stroke:red;
+// }
+
+#kiwi1:hover,
+#kiwi2:hover,
+#kiwi3:hover,
+#kiwi4:hover,
+#kiwi5:hover,
+#kiwi6:hover,
+#kiwi7:hover,
+#kiwi8:hover,
+#kiwi9:hover,
+#kiwi10:hover,
+#kiwi13:hover,
+#kiwi14:hover,
+#kiwi15:hover,
+#kiwi16:hover,
+#kiwi17:hover,
+#kiwi18:hover {
+    cursor: pointer;
+  // pathcolor: red;
+  // fill: green;
+  // fillcolor: red;
+  // stroke-opacity: 1;
+  // stroke:red !important;
+  // opacity: 0.5;
+  // background-color: green !important;
+}
+#svg {
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+}
+
+#luga {
+    position: absolute;
+    top: 748px;
+    left: 50%;
+    margin-left: -200px;
+}
+
+#boksi {
+    position: absolute;
+    top: 598px;
+    left: 50%;
+    margin-left: 230px;
+}
+
+#svetlo {
+    position: absolute;
+    top: 283px;
+    left: 50%;
+    margin-left: -295px;
+}
+
+#viborg {
+    position: absolute;
+    top: 358px;
+    left: 50%;
+    margin-left: -310px;
+}
+
+#gatchina {
+    position: absolute;
+    top: 568px;
+    left: 50%;
+    margin-left: -183px;
+}
+
+#ivan {
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    margin-left: -352px;
+}
+
+#kingi {
+    position: absolute;
+    top: 626px;
+    left: 50%;
+    margin-left: -318px;
+}
+
+#volosovo {
+    position: absolute;
+    top: 590px;
+    left: 50%;
+    margin-left: -267px;
+}
+
+#kirishi {
+    position: absolute;
+    top: 598px;
+    left: 50%;
+    margin-left: 20px;
+}
+
+#kirovsk {
+    position: absolute;
+    top: 508px;
+    left: 50%;
+    margin-left: -57px;
+}
+
+#kolpino {
+    position: absolute;
+    top: 548px;
+    left: 50%;
+    margin-left: -100px;
+}
+
+#lomon {
+    position: absolute;
+    top: 493px;
+    left: 50%;
+    margin-left: -290px;
+}
+
+#otrad {
+    position: absolute;
+    top: 528px;
+    left: 50%;
+    margin-left: -70px;
+}
+
+#petrodvor {
+    position: absolute;
+    top: 501px;
+    left: 50%;
+    margin-left: -208px;
+}
+
+#podpor {
+    position: absolute;
+    top: 323px;
+    left: 50%;
+    margin-left: 285px;
+}
+
+#priozer {
+    position: absolute;
+    top: 273px;
+    left: 50%;
+    margin-left: -205px;
+}
+
+#pushkin {
+    position: absolute;
+    top: 560px;
+    left: 50%;
+    margin-left: -115px;
+}
+
+#sestror {
+    position: absolute;
+    top: 470px;
+    left: 50%;
+    margin-left: -175px;
+}
+
+#slanci {
+    position: absolute;
+    top: 670px;
+    left: 50%;
+    margin-left: -362px;
+}
+
+#tihvin {
+    position: absolute;
+    top: 568px;
+    left: 50%;
+    margin-left: 190px;
+}
+
+#volhov {
+    position: absolute;
+    top: 503px;
+    left: 50%;
+    margin-left: 85px;
+}
+
+#vsevol {
+    position: absolute;
+    top: 498px;
+    left: 50%;
+    margin-left: -105px;
+}
+
+#zelen {
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    margin-left: -185px;
+}
+.mtkiwi1 {
+    top: 548px;
+    margin-left: -180px;
+}
+.mtkiwi2 {
+    top: 568px;
+    margin-left: -1px;
+}
+.mtkiwi3 {
+    top: 548px;
+    margin-left: -100px;
+}
+.mtkiwi4 {
+    top: 478px;
+    margin-left: -100px;
+}
+.mtkiwi5 {
+    top: 528px;
+    margin-left: -170px;
+}
+.mtkiwi6 {
+    top: 250px;
+    margin-left: -150px;
+}
+.mtkiwi7 {
+    top: 400px;
+    margin-left: 140px;
+}
+.mtkiwi8 {
+    top: 490px;
+    margin-left: -50px;
+}
+.mtkiwi9 {
+    top: 450px;
+    margin-left: 30px;
+}
+.mtkiwi10 {
+    top: 450px;
+    margin-left: -100px;
+}
+.mtkiwi11 {
+    top: 350px;
+    margin-left: 50px;
+}
+.mtkiwi12 {
+    top: 350px;
+    margin-left: 230px;
+}
+.mtkiwi13 {
+    top: 350px;
+    margin-left: -50px;
+}
+.mtkiwi14 {
+    top: 240px;
+    margin-left: -80px;
+}
+.mtkiwi15 {
+    top: 450px;
+    margin-left: -100px;
+}
+.mtkiwi16 {
+    top: 410px;
+    margin-left: -180px;
+}
+.mtkiwi17 {
+    top: 250px;
+    margin-left: -100px;
+}
+.mtkiwi18 {
+    top: 250px;
+    margin-left: -30px;
+}
+#tmod {
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    display: none;
+    width: 270px;
+    padding: 10px;
+    opacity: .8;
+    border-radius: 8px;
+    background: #000;
+}
+.zag {
+    font-size: 14px;
+    text-align: left;
+    color: #00aeff;
+}
+hr {
+    color: #00aeff;
+}
+.text {
+    font-size: 12px;
+    color: #fff;
+}
+#slovo {
+    font-family: arial;
+    font-size: 10px;
+    font-weight: 100;
+    width: 90px;
+    margin-top: 85px;
+    color: green;
+}
+.divmod {
+    display: none;
+}
+.mt0 {
+    display: none;
+}
