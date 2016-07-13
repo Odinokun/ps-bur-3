@@ -72,19 +72,7 @@ ul {
     li {
         position: relative;
         padding: 2px 0;
-        list-style: none;
-        &::after {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: -17px;
-            display: block;
-            width: 8px;
-            height: 8px;
-            margin: auto;
-            content: '';
-            background-color: $brand-color;
-        }
+        list-style: url('../img/ul.jpg');
     }
 }
 ol {

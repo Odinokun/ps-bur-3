@@ -40,13 +40,13 @@
     }
 }
 .header__middle-container {
-    text-align: justify;
     margin-bottom: -20px;
+    text-align: justify;
     &::after {
         display: inline-block;
         width: 100%;
-        content: '';
         height: 0;
+        content: '';
     }
 }
 .header__middle-logo,
@@ -55,32 +55,40 @@
     display: inline-block;
     vertical-align: middle;
 }
-.header__middle-logo{
+.header__middle-logo {
+    position: relative;
+    .logo-link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
     .logo-pic,
     .logo-text {
         display: inline-block;
         vertical-align: middle;
     }
     .logo-pic {
-        background-color: $brand-color;
+        position: relative;
         width: 50px;
         height: 50px;
-        position: relative;
+        background-color: $brand-color;
         img {
             position: absolute;
             top: 0;
-            bottom: 0;
             right: 0;
+            bottom: 0;
             left: 0;
-            margin: auto;
             max-width: 90%;
             max-height: 90%;
+            margin: auto;
         }
     }
     .logo-text {
-        color: #323232;
         font-size: 16px;
         padding: 0 10px;
+        color: #323232;
     }
 }
 
@@ -118,23 +126,76 @@
     margin: 0;
     padding: 0;
 }
-//////////////////////////////////
-///
-/// ПЕРЕДЕЛАТЬ КВАДРАТИКИ У СПИСКОВ
-///
-//////////////////////////////////
-
 .navigation__item {
+    font-size: 16px;
+    display: inline-block;
+    padding: 0 0 0 40px;
     list-style: none;
-    &::after {
-        display: none;
+    &:hover {
+        a {
+            transition: .5s;
+            border-bottom: 2px solid $brand-color;
+        }
+    }
+    &.active {
+        a {
+            transition: .5s;
+            color: $brand-color;
+        }
+    }
+    a {
+        display: inline-block;
+        padding: 8px 0;
+        transition: .5s;
+        text-decoration: none;
+        color: #fff;
+        border-bottom: 2px solid transparent;
     }
 }
 /*===== /header =====*/
+
+
+/*===== top__section =====*/
+.top__section {
+    position: relative;
+    height: 510px;
+    background: url('../img/bg-top-section.jpg') 50% 50% no-repeat;
+    text-align: center;
+    &::before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+}
+.top__section-banner {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+.banner__text-big,
+.banner__text-small {
+    @include opensans(bold);
+    font-weight: 400;
+    color: #fff;
+    span {
+        color: $brand-color;
+    }
+}
+.banner__text-big {
+    font-size: 48px;
+    line-height: 48px;
+}
+.banner__text-small {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+/*===== /top__section =====*/
 .map {
     display: none; //temp
 }
-.header__bottom {
-    height: 40px;
-    background-color: #ccc;
+.temp {
+    height: 1000px;
+    background-color: #00c;
 }
