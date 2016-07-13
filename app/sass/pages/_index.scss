@@ -1,0 +1,140 @@
+/*===== header =====*/
+.header__top {
+    text-align: right;
+    background-color: $brand-color;
+}
+.header__top-adress {
+    &::after {
+        background: url('../img/sprite.png') -17px -483px no-repeat;
+    }
+}
+.header__top-mail {
+    &::after {
+        background: url('../img/sprite.png') -17px -440px no-repeat;
+    }
+}
+.header__top-adress,
+.header__top-mail {
+    position: relative;
+    display: inline-block;
+    margin-left: 120px;
+    padding-left: 40px;
+    vertical-align: middle;
+    &::after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 30px;
+        height: 30px;
+        content: '';
+    }
+    &:hover a {
+        text-decoration: underline;
+    }
+    a {
+        line-height: 30px;
+        text-decoration: none;
+        color: #323232;
+    }
+}
+.header__middle-container {
+    text-align: justify;
+    margin-bottom: -20px;
+    &::after {
+        display: inline-block;
+        width: 100%;
+        content: '';
+        height: 0;
+    }
+}
+.header__middle-logo,
+.header__middle-btn,
+.header__middle-phone {
+    display: inline-block;
+    vertical-align: middle;
+}
+.header__middle-logo{
+    .logo-pic,
+    .logo-text {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .logo-pic {
+        background-color: $brand-color;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            max-width: 90%;
+            max-height: 90%;
+        }
+    }
+    .logo-text {
+        color: #323232;
+        font-size: 16px;
+        padding: 0 10px;
+    }
+}
+
+.popup__btn-header {
+    color: #000;
+}
+.header__middle-phone {
+    position: relative;
+    padding: 10px 0 10px 90px;
+    padding-left: 90px;
+    &::after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 80px;
+        content: '';
+        background: url('../img/sprite.png') -10px 12px no-repeat;
+    }
+    a {
+        font-size: 18px;
+        line-height: 24px;
+        text-decoration: none;
+        color: #323232;
+
+        @include opensans(semibold);
+    }
+}
+// === navigation ===
+.navigation {
+    background-color: #333236;
+}
+.navigation__list {
+    margin: 0;
+    padding: 0;
+}
+//////////////////////////////////
+///
+/// ПЕРЕДЕЛАТЬ КВАДРАТИКИ У СПИСКОВ
+///
+//////////////////////////////////
+
+.navigation__item {
+    list-style: none;
+    &::after {
+        display: none;
+    }
+}
+/*===== /header =====*/
+.map {
+    display: none; //temp
+}
+.header__bottom {
+    height: 40px;
+    background-color: #ccc;
+}

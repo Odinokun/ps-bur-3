@@ -71,19 +71,18 @@ a {
 ul {
     li {
         position: relative;
-        list-style: none;
         padding: 2px 0;
+        list-style: none;
         &::after {
-            content: "";
-            width: 8px;
-            height: 8px;
-            // position: absolute;
-            display: block;
             position: absolute;
             top: 0;
-            left: -17px;
             bottom: 0;
+            left: -17px;
+            display: block;
+            width: 8px;
+            height: 8px;
             margin: auto;
+            content: '';
             background-color: $brand-color;
         }
     }
@@ -103,10 +102,26 @@ ol {
     flex: 1;
 }
 .container {
-    width: 1200px;
+    width: 1160px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 20px;
 }
 .hidden {
     display: none;
+}
+
+.popup__btn {
+    font-size: 18px;
+    padding: 10px 35px;
+    cursor: pointer;
+    transition: .5s;
+    text-transform: uppercase;
+    border: 2px solid $brand-color;
+    background-color: transparent;
+
+    @include opensans(bold);
+    &:hover {
+        transition: .5s;
+        background-color: $brand-color;
+    }
 }
