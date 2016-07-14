@@ -115,6 +115,24 @@ ol {
     }
 }
 
+.page__title {
+    min-width: 1160px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 15px solid #333236;
+    background: url('../img/bg-section-title.jpg') 50% 50% no-repeat;
+    background-size: cover;
+    .page__title-text {
+        font-size: 30px;
+        margin: 0;
+        padding: 50px 0;
+        text-transform: uppercase;
+        color: #333236;
+
+        @include opensans(bold);
+    }
+}
+
 .section__header {
     text-align: center;
 }

@@ -1,0 +1,54 @@
+/*===== news =====*/
+.news__item-list {
+    padding: 20px 0;
+}
+
+/*===== /news =====*/
+
+// ===== pagination =====
+.pagination {
+    margin-bottom: 20px;
+    .container {
+        width: 1120px;
+        text-align: center;
+        background-color: $brand-color;
+    }
+}
+.pagination__list {
+    display: inline-block;
+    margin: 0;
+    padding: 5px 0;
+    vertical-align: middle;
+}
+.pagination__item {
+    display: inline-block;
+    &.active {
+        .pagination__link {
+            transition: .5s;
+            color: #fff;
+            background-color: #333236;
+        }
+    }
+}
+.pagination__link {
+    font-size: 16px;
+    line-height: 25px;
+    display: inline-block;
+    width: 25px;
+    margin: 0 5px;
+    transition: .5s;
+    text-align: center;
+    text-decoration: none;
+    color: #103d54;
+
+    @include opensans(bold);
+    &:hover {
+        transition: .5s;
+        color: #973c00;
+    }
+}
+// ===== /pagination =====
+
+
+/*===== temp =====*/
+/*===== /temp =====*/

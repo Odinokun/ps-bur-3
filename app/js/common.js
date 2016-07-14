@@ -16,6 +16,13 @@ $(function() {
     });
 });
 
+// add class active in pagination
+$('.pagination__item').click(function(e) {
+        e.preventDefault();
+    $('.pagination__item').removeClass('active');
+    $(this).addClass('active');
+});
+
 // svg map
 $(document).ready(function() {
   $("[id ^= kiwi]").hover(function() {
