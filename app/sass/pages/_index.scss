@@ -1,9 +1,8 @@
 /*===== header =====*/
 .header__top {
+    min-width: 1160px;
     text-align: right;
     background-color: $brand-color;
-    min-width: 1160px;
-
 }
 .header__top-adress {
     &::after {
@@ -122,8 +121,8 @@
 }
 // === navigation ===
 .navigation {
-    background-color: #333236;
     min-width: 1160px;
+    background-color: #333236;
 }
 .navigation__list {
     margin: 0;
@@ -200,8 +199,9 @@
 
 /*===== map__section =====*/
 .map__section {
-    @include clearfix;
     min-width: 1160px;
+
+    @include clearfix;
 }
 .map__header {
     background-color: #333236;
@@ -253,8 +253,8 @@
 
 
 .map__item {
-    display: none;
     position: relative;
+    display: none;
     &.active {
         display: block;
     }
@@ -264,8 +264,8 @@
 
 /*===== advantage =====*/
 .advantage__section {
-    background-color: #333236;
     min-width: 1160px;
+    background-color: #333236;
     .section__header {
         background-color: #fff;
     }
@@ -285,46 +285,103 @@
     vertical-align: middle;
 }
 .advantage__pic {
+    position: relative;
     width: 90px;
     height: 90px;
-    position: relative;
     background-color: $brand-color;
     img {
         position: absolute;
         top: 0;
+        right: 0;
         bottom: 0;
         left: 0;
-        right: 0;
-        margin: auto;
         max-width: 90%;
         max-height: 90%;
+        margin: auto;
     }
 }
 .advantage__text {
     width: 180px;
-    color: #fff;
     padding: 0 20px;
+    color: #fff;
 }
 .advantage__text-big {
-    padding: 5px 0;
     font-size: 18px;
+    padding: 5px 0;
+    text-transform: uppercase;
+
     @include opensans(bold);
-text-transform: uppercase;
-span {
-    font-size: 24px;
-}
+    span {
+        font-size: 24px;
+    }
 }
 .advantage__text-small {
-    padding: 5px 0;
     font-size: 12px;
     line-height: 14px;
+    padding: 5px 0;
 }
 /*===== /advantage =====*/
+
+
+/*===== our__works =====*/
+.our__works {
+    .container {
+        padding: 20px 0 50px 0;
+    }
+}
+.our__works-slider {
+    margin: 0;
+    padding: 0;
+}
+.our__works_slider-img {
+    padding: 0;
+    &:hover {
+        transition: .5s;
+        opacity: .5;
+    }
+}
+.bx-wrapper {
+    border: none;
+    background-color: $brand-color;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+.bx-controls.bx-has-pager {
+    position: absolute;
+    top: 270px;
+    right: 0;
+    width: 200px;
+}
+.bx-wrapper .bx-controls-direction a {
+    width: 40px;
+    height: 40px;
+    margin-top: -10px;
+}
+.bx-wrapper .bx-prev {
+    left: -15px;
+    background: url('../img/sprite.png');
+    background-position: -20px -76px !important;
+    &:hover {
+        background: url('../img/sprite.png');
+        background-position: -20px -196px !important;
+    }
+}
+.bx-wrapper .bx-next {
+    right: -15px;
+    background: url('../img/sprite.png');
+    background-position: -20px -136px !important;
+    &:hover {
+        background: url('../img/sprite.png');
+        background-position: -20px -256px !important;
+    }
+}
+/*===== /our__works =====*/
+
 
 /*===== temp =====*/
 /*===== /temp =====*/
 .temp {
+    min-width: 1160px;
     height: 1000px;
     background-color: #00c;
-    min-width: 1160px;
 }
