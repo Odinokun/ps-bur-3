@@ -16,12 +16,16 @@ $(function() {
     });
 });
 
+
+
 // add class active in pagination
 $('.pagination__item').click(function(e) {
         e.preventDefault();
     $('.pagination__item').removeClass('active');
     $(this).addClass('active');
 });
+
+
 
 // svg map
 $(document).ready(function() {
@@ -64,12 +68,16 @@ $(document).ready(function() {
     });
 });
 
+
+
 //gallery
 $(function() {
     lightbox.option({
       'wrapAround': true
     })
 });
+
+
 
 //our_works_slider
 $('.our__works-slider').bxSlider({
@@ -81,4 +89,26 @@ $('.our__works-slider').bxSlider({
     pager: false,
     infiniteLoop: true,
     auto: true
+});
+
+
+
+//popup_form
+$(function() {
+    // popup open
+    $('.popupOpen').click( function(){
+        $('.feedback, .layerBox').fadeIn();
+        return false;
+    });
+    $('.feedback .btnBox').click( function(){
+        $('.feedback').fadeOut();
+        $('.success').fadeIn();
+        return false;
+    });
+
+    // popup close
+    $('.layerBox, .success .btnBox, .close_bth').click( function(){
+        $('.layerBox, .popupBox').fadeOut();
+        return false;
+    });
 });

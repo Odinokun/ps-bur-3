@@ -1,105 +1,14 @@
 .map_deeps_container {
     float: left;
     width: 100%;
-    // height: 838px;
     height: 700px;
-    // background: url(images/bg_map_deeps.jpg) no-repeat top center;
     background-size: cover;
 }
-
-// .map_deeps_content {
-//     display: inline-block;
-//     width: 100%;
-//     // height: 798px;
-//     height: 700px;
-//     /*background: url(images/map_deeps.png) no-repeat center 140px;*/
-// }
-
-// .map_deeps_content > .title {
-//     display: inline-block;
-//     display: none;
-//     width: 100%;
-//     margin-top: 70px;
-//     text-align: left;
-// }
-
-// .map_deeps_content > .title h2 {
-//     font-size: 24px;
-//     font-weight: bold;
-//     text-transform: uppercase;
-//     color: #34495e;
-// }
-
-// .map_deeps_content > .title span {
-//     font-size: 16px;
-//     font-weight: bold;
-//     display: block;
-//     width: 100%;
-//     margin-top: 16px;
-//     text-align: left;
-//     color: #34495e;
-// }
-/********************************** ÐšÐ°Ñ€Ñ‚Ð° Ð³Ð»ÑƒÐ±Ð¸Ð½ *************************************/
-
-/********************************** ÐšÐ°Ñ€Ñ‚Ð° *************************************/
-// .map_container {
-//     position: relative;
-//     float: left;
-//     width: 100%;
-//     height: 490px;
-// }
-
-// .map_container .map_shadow {
-//     position: absolute;
-//     z-index: 10;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 42px;
-//     background: url(images/bg_map.png) no-repeat top center;
-//     background-size: cover;
-// }
-
 #map {
     float: left;
     width: 100%;
     height: 100%;
 }
-
-
-
-/***************************** codepen **********************************/
-// #fl {
-//     font-size: 12px;
-//     float: left;
-//     width: 300px;
-//     height: 25px;
-//     padding: 40px 0 0 10px;
-//     color: pink;
-// }
-// #fr {
-//     font-size: 12px;
-//     float: right;
-//     width: 300px;
-//     padding: 30px 0 0 0;
-//     text-align: right;
-//     color: pink;
-// }
-// .fbimg {
-//     padding: 15px;
-// }
-// #footer a {
-//     padding-top: 4px;
-//     color: #pink;
-// }
-// #kiwi1, #kiwi2, #kiwi3, #kiwi4, #kiwi5, #kiwi6, #kiwi7, #kiwi8, #kiwi9, #kiwi10, #kiwi11, #kiwi12, #kiwi13, #kiwi14, #kiwi15, #kiwi16, #kiwi17, #kiwi18 {
-//   fill: pink;
-//   fillcolor: pink;
-//   stroke-opacity: 0;
-//   stroke:red;
-//     cursor: pointer;
-// }
-// .kiwi,
 #kiwi1:hover,
 #kiwi2:hover,
 #kiwi3:hover,
@@ -359,24 +268,27 @@
     margin-left: -30px;
 }
 #tmod {
-    font-weight: bold;
     position: absolute;
     left: 50%;
     display: none;
-    width: 270px;
-    padding: 10px;
-    opacity: .8;
-    border-radius: 8px;
-    background: #000;
+    width: 390px;
+    padding: 20px;
+    background: #fff;
+    border: 8px solid #333236;
 }
 .zag {
-    font-size: 14px;
+    text-transform: uppercase;
+    font-size: 20px;
     text-align: left;
-    color: $brand-color;
+    color: #323232;
+    text-align: center;
+    margin-bottom: 15px;
+    @include opensans(bold);
 }
 .text {
-    font-size: 12px;
-    color: #fff;
+    font-size: 14px;
+    @include opensans(regular);
+    color: #323232;
 }
 #slovo {
     font-size: 10px;

@@ -55,7 +55,7 @@
                         <a href="#" class="logo-link"></a>
                     </div>
                     <div class="header__middle-btn">
-                        <div class="popup__btn popup__btn-header">
+                        <div class="popup__btn popup__btn-header popupOpen">
                             Оставить заявку
                         </div>
                     </div>
@@ -171,7 +171,6 @@
                 </div>
             </section>
             <!-- END #news__item-list -->
-
             <!-- BEGIN #pagination  -->
             <section class="pagination">
                 <div class="container">
@@ -235,7 +234,7 @@
                         </div>
                     </div>
                     <div class="contacts__item contacts__item-btn">
-                        <div class="popup__btn popup__btn-contacts">
+                        <div class="popup__btn popup__btn-contacts popupOpen">
                             Оставить заявку
                         </div>
                     </div>
@@ -248,6 +247,45 @@
         </footer>
         <!-- END #footer -->
     </div>
+    <!-- BEGIN #Popup_form  -->
+    <div class="layerBox"></div>
+    <div class="popupBox feedback">
+        <div class="popupInn">
+            <div class="top_block">
+                <div class="close_bth"></div>
+                <h3>Оставьте заявку</h3>
+            </div>
+            <div class="formBox">
+                <form action="#" method="post">
+                    <h4>Ваше имя:</h4>
+                    <div class="inputBox">
+                        <input type="text">
+                    </div>
+                    <h4>Телефон для связи:</h4>
+                    <div class="inputBox error">
+                        <input type="text">
+                    </div>
+                    <h4>Электронная почта:</h4>
+                    <div class="inputBox">
+                        <input type="text">
+                    </div>
+                    <div class="btnBox">
+                        <input type="submit" placeholder="отправить">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="popupBox success">
+        <div class="popupInn">
+            <h5>Ваше сообщение отправленно!</h5>
+            <h6>Мы свяжемся с Вами в ближайшее время</h6>
+            <div class="btnBox btnBoxOk">
+                <a class="btn" href="#"><span>ok</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- END #Popup_form -->
     <!-- build:js js/vendors.js -->
     <!-- bower:js -->
     <script src='bower_components/jquery/dist/jquery.js'></script>

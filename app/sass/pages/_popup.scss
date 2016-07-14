@@ -1,0 +1,243 @@
+/*********** begin #popup_form.css ***********/
+.formBox {
+    position: relative;
+    margin-top: 40px;
+    padding: 10px 50px;
+    text-align: left;
+    h4 {
+        font-size: 18px;
+        margin: 15px 0 10px 0;
+        letter-spacing: .6px;
+    }
+}
+.inputBox,
+.textareaBox {
+    width: 260px;
+    margin: 0;
+}
+.inputBox label,
+.captchaBox label,
+.textareaBox label,
+.checkItem label {
+    display: block;
+    margin: 0 0 5px;
+    color: #898989;
+}
+.inputBox input,
+.captchaBox input,
+.textareaBox textarea {
+    font-size: 20px;
+    display: block;
+    width: 350px;
+    height: 40px;
+    margin: 0;
+    padding: 0 0 0 15px;
+    letter-spacing: .5px;
+    color: #575757;
+    border: 1px solid #bfbfbf;
+    background: #fff;
+}
+.inputBox input[type='text']:focus,
+.inputBox input[type='text']:active,
+.captchaBox input[type='text']:focus,
+.captchaBox input[type='text']:active,
+.textareaBox textarea:focus,
+.textareaBox textarea:active {
+    border-color: #36a2d4;
+    // border-radius: 7px;
+    outline: none;
+}
+.error input[type='text'],
+.error textarea {
+    border-color: #ed1b24 !important;
+    background: #fbd1d3 !important;
+}
+.textareaBox textarea {
+    line-height: 18px;
+    height: 100px;
+    padding: 5px 10px;
+    resize: none;
+}
+
+/* =========================== / form =========================== */
+
+/* =========================== popup =========================== */
+.layerBox {
+    position: fixed;
+    z-index: 20000;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(242,137,67,.6);
+}
+.popupBox {
+    position: fixed;
+    z-index: 25000;
+    top: 50%;
+    left: 50%;
+    display: none;
+    width: 500px;
+    height: 490px;
+    margin: -245px 0 0 -250px;
+    color: #676767;
+    border: 8px solid $brand-color;
+    background: #333236;
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,.7);/* Safari 4 */
+       -moz-box-shadow: 0 0 15px rgba(0,0,0,.7);/* Firefox */
+            box-shadow: 0 0 15px rgba(0,0,0,.7);/* IE 9, Safari 5,re4 Chrome */
+
+        -ms-box-shadow: 0 0 15px rgba(0,0,0,.7);
+}
+.popupInn {
+    padding: 40px 15px 28px 15px;
+    text-align: center;
+}
+
+.top_block {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 45px;
+    // background-color: #36a2d4;
+    h3 {
+        font-size: 24px;
+        font-weight: 400;
+        position: relative;
+        padding: 20px 0;
+        text-transform: uppercase;
+        color: #fff;
+
+        @include opensans(bold);
+        &::before {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 100px;
+            height: 3px;
+            margin: auto;
+            content: '';
+            background-color: $brand-color;
+        }
+    }
+    .close_bth {
+        position: absolute;
+        top: -50px;
+        right: -55px;
+        width: 45px;
+        height: 45px;
+        background: url('../img/close.png') 50% 50% no-repeat;
+    }
+}
+
+.popupBox .btnBox {
+    padding: 0;
+    text-align: center;
+    input {
+        font-size: 18px;
+        width: 350px;
+        margin-top: 27px;
+        padding: 10px 40px;
+        transition: .5s;
+        text-transform: uppercase;
+        color: #fff;
+        border: 2px solid $brand-color;
+        outline: none;
+        background: none;
+        background-color: transparent;
+
+        @include opensans(bold);
+        &:hover {
+            transition: .5s;
+            color: #333236;
+            background-color: $brand-color;
+        }
+    }
+}
+
+.popupBox .btnBox a.btn {
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-box-shadow: none;/* Safari 4 */
+       -moz-box-shadow: none;/* Firefox */
+            box-shadow: none;/* IE 9, Safari 5,re4 Chrome */
+
+        -ms-box-shadow: none;
+}
+.popupBox .btnBox a.btn span {
+    padding: 0 34px;
+}
+.success {
+    height: 220px;
+    margin-top: -110px;
+    text-align: center;
+    p {
+        font-size: 18px;
+        margin-top: 20px;
+        letter-spacing: .5px;
+        color: #000;
+    }
+}
+
+.popupInn {
+    > span {
+        display: block;
+        width: 180px;
+        height: 5px;
+        margin: 20px auto 0;
+        border-radius: 3px;
+        background-color: #46bfec;
+    }
+}
+.success {
+    h5,
+    h6 {
+        font-weight: 400;
+        line-height: 24px;
+        margin: 0;
+        text-transform: uppercase;
+        color: #fff;
+
+        @include opensans(bold);
+    }
+    h5 {
+        // margin-top: 40px;
+    }
+    h6 {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+}
+
+.success .btnBox {
+    margin: 0 auto 0;
+    a {
+        // font-family: $os_b;
+        font-size: 18px;
+        display: inline-block;
+        width: 330px;
+        padding: 10px 40px;
+        transition: .5s;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        border: 2px solid $brand-color;
+        outline: none;
+        background-color: transparent;
+
+        @include opensans(bold);
+        &:hover {
+            transition: .5s;
+            color: #333236;
+            background-color: $brand-color;
+        }
+    }
+}
+/*********** end #popup_form.css ***********/
