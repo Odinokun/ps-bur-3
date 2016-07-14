@@ -75,12 +75,76 @@
                     </ol>
                 </div>
             </section>
+            <div class="gallery">
+                <div class="container">
+                    <div class="gallery_img_wrap">
+                        <a href="img/gallery_temp.jpg" data-lightbox="image-1"> <img src="img/gallery_temp.jpg" alt="photo"></a>
+                    </div>
+                    <div class="gallery_img_wrap">
+                        <a href="img/gallery_temp.jpg" data-lightbox="image-1"> <img src="img/gallery_temp.jpg" alt="photo"></a>
+                    </div>
+                    <div class="gallery_img_wrap">
+                        <a href="img/gallery_temp.jpg" data-lightbox="image-1"> <img src="img/gallery_temp.jpg" alt="photo"></a>
+                    </div>
+                    <div class="gallery_img_wrap">
+                        <a href="img/gallery_temp.jpg" data-lightbox="image-1"> <img src="img/gallery_temp.jpg" alt="photo"></a>
+                    </div>
+                    <div class="gallery_img_wrap">
+                        <a href="img/gallery_temp.jpg" data-lightbox="image-1"> <img src="img/gallery_temp.jpg" alt="photo"></a>
+                    </div>
+                    <div class="gallery_img_wrap">
+                        <a href="img/gallery_temp.jpg" data-lightbox="image-1"> <img src="img/gallery_temp.jpg" alt="photo"></a>
+                    </div>
+                    <div class="gallery_img_wrap">
+                        <a href="img/gallery_temp.jpg" data-lightbox="image-1"> <img src="img/gallery_temp.jpg" alt="photo"></a>
+                    </div>
+                    <div class="gallery_img_wrap">
+                        <a href="img/gallery_temp.jpg" data-lightbox="image-1"> <img src="img/gallery_temp.jpg" alt="photo"></a>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- END #content -->
         <!-- BEGIN #footer  -->
         <footer class="footer">
-            <div class="container">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nobis, accusamus consectetur unde animi voluptatibus facilis tempore nemo quidem quod.
+            <div class="section__header">
+                <div class="section__header-container">
+                    <h2 class="section__header-title">Как с нами связаться</h2>
+                </div>
+            </div>
+            <div class="contacts__section-map" id="contacts__section-map"></div>
+            <!-- BEGIN #contacts__section  -->
+            <div class="contacts__section">
+                <div class="container">
+                    <div class="contacts__item">
+                        <div class="contacts__item-top adress">Наш адрес</div>
+                        <div class="contacts__item-bottom">
+                            <a href="https://goo.gl/maps/3Hj71wyWCqG2" target="_blank">Выборгское Шоссе<br> д. 28А офис 1303</a>
+                        </div>
+                    </div>
+                    <div class="contacts__item">
+                        <div class="contacts__item-top phone">Телефон</div>
+                        <div class="contacts__item-bottom">
+                            <a href="tel://+7 (812) 642-02-32">+7 (812) 642-02-32</a><br>
+                            <a href="tel://+7 (812) 642-02-32">+7 (812) 642-02-32</a>
+                        </div>
+                    </div>
+                    <div class="contacts__item">
+                        <div class="contacts__item-top email">E-mail</div>
+                        <div class="contacts__item-bottom">
+                            <a href="mailto:info@burenie.ru">info@burenie.ru</a>
+                        </div>
+                    </div>
+                    <div class="contacts__item contacts__item-btn">
+                        <div class="popup__btn popup__btn-contacts">
+                            Оставить заявку
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END #contacts__section -->
+            <div class="copyright">
+                Копирайт 2016 Бурение скважин
             </div>
         </footer>
         <!-- END #footer -->
@@ -95,6 +159,141 @@
     <!-- build:js js/common.js -->
     <script src="js/common.js"></script>
     <!-- endbuild -->
-</body>
+        <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>
+        <script>
+        google.maps.event.addDomListener(window, 'load', init);
+        var map;
 
-</html>
+        function init() {
+            var mapOptions = {
+                center: new google.maps.LatLng(59.9065, 30.321349),
+                zoom: 11,
+                zoomControl: true,
+                zoomControlOptions: {
+                    style: google.maps.ZoomControlStyle.DEFAULT,
+                },
+                disableDoubleClickZoom: true,
+                mapTypeControl: true,
+                mapTypeControlOptions: {
+                    style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+                },
+                scaleControl: true,
+                scrollwheel: false,
+                panControl: true,
+                streetViewControl: true,
+                draggable: true,
+                overviewMapControl: true,
+                overviewMapControlOptions: {
+                    opened: false,
+                },
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                styles: [{
+                    "featureType": "water",
+                    "stylers": [{
+                        "visibility": "on"
+                    }, {
+                        "color": "#b5cbe4"
+                    }]
+                }, {
+                    "featureType": "landscape",
+                    "stylers": [{
+                        "color": "#efefef"
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#83a5b0"
+                    }]
+                }, {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#bdcdd3"
+                    }]
+                }, {
+                    "featureType": "road.local",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#ffffff"
+                    }]
+                }, {
+                    "featureType": "poi.park",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#e3eed3"
+                    }]
+                }, {
+                    "featureType": "administrative",
+                    "stylers": [{
+                        "visibility": "on"
+                    }, {
+                        "lightness": 33
+                    }]
+                }, {
+                    "featureType": "road"
+                }, {
+                    "featureType": "poi.park",
+                    "elementType": "labels",
+                    "stylers": [{
+                        "visibility": "on"
+                    }, {
+                        "lightness": 20
+                    }]
+                }, {}, {
+                    "featureType": "road",
+                    "stylers": [{
+                        "lightness": 20
+                    }]
+                }],
+            }
+            var mapElement = document.getElementById('contacts__section-map');
+            var map = new google.maps.Map(mapElement, mapOptions);
+            var locations = [
+
+            ];
+            for (i = 0; i < locations.length; i++) {
+                if (locations[i][1] == 'undefined') {
+                    description = '';
+                } else {
+                    description = locations[i][1];
+                }
+                if (locations[i][2] == 'undefined') {
+                    telephone = '';
+                } else {
+                    telephone = locations[i][2];
+                }
+                if (locations[i][3] == 'undefined') {
+                    email = '';
+                } else {
+                    email = locations[i][3];
+                }
+                if (locations[i][4] == 'undefined') {
+                    web = '';
+                } else {
+                    web = locations[i][4];
+                }
+                if (locations[i][7] == 'undefined') {
+                    markericon = '';
+                } else {
+                    markericon = locations[i][7];
+                }
+                marker = new google.maps.Marker({
+                    icon: markericon,
+                    position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                    map: map,
+                    title: locations[i][0],
+                    desc: description,
+                    tel: telephone,
+                    email: email,
+                    web: web
+                });
+                link = '';
+            }
+
+        }
+        </script>
+    </body>
+
+    </html>
+

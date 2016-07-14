@@ -69,7 +69,7 @@ $('.our__works-slider').bxSlider({
     minSlides: 4,
     maxSlides: 4,
     moveSlides: 1,
-    slideWidth: 295,
+    slideWidth: 280,
     slideMargin: 0,
     pager: false,
     infiniteLoop: true,
