@@ -1,0 +1,394 @@
+.map_deeps_container {
+    float: left;
+    width: 100%;
+    // height: 838px;
+    height: 700px;
+    background: url(images/bg_map_deeps.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+// .map_deeps_content {
+//     display: inline-block;
+//     width: 100%;
+//     // height: 798px;
+//     height: 700px;
+//     /*background: url(images/map_deeps.png) no-repeat center 140px;*/
+// }
+
+// .map_deeps_content > .title {
+//     display: inline-block;
+//     display: none;
+//     width: 100%;
+//     margin-top: 70px;
+//     text-align: left;
+// }
+
+// .map_deeps_content > .title h2 {
+//     font-size: 24px;
+//     font-weight: bold;
+//     text-transform: uppercase;
+//     color: #34495e;
+// }
+
+// .map_deeps_content > .title span {
+//     font-size: 16px;
+//     font-weight: bold;
+//     display: block;
+//     width: 100%;
+//     margin-top: 16px;
+//     text-align: left;
+//     color: #34495e;
+// }
+/********************************** ÐšÐ°Ñ€Ñ‚Ð° Ð³Ð»ÑƒÐ±Ð¸Ð½ *************************************/
+
+/********************************** ÐšÐ°Ñ€Ñ‚Ð° *************************************/
+// .map_container {
+//     position: relative;
+//     float: left;
+//     width: 100%;
+//     height: 490px;
+// }
+
+// .map_container .map_shadow {
+//     position: absolute;
+//     z-index: 10;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 42px;
+//     background: url(images/bg_map.png) no-repeat top center;
+//     background-size: cover;
+// }
+
+#map {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/***************************** codepen **********************************/
+// #fl {
+//     font-size: 12px;
+//     float: left;
+//     width: 300px;
+//     height: 25px;
+//     padding: 40px 0 0 10px;
+//     color: pink;
+// }
+// #fr {
+//     font-size: 12px;
+//     float: right;
+//     width: 300px;
+//     padding: 30px 0 0 0;
+//     text-align: right;
+//     color: pink;
+// }
+// .fbimg {
+//     padding: 15px;
+// }
+// #footer a {
+//     padding-top: 4px;
+//     color: #pink;
+// }
+// #kiwi1, #kiwi2, #kiwi3, #kiwi4, #kiwi5, #kiwi6, #kiwi7, #kiwi8, #kiwi9, #kiwi10, #kiwi11, #kiwi12, #kiwi13, #kiwi14, #kiwi15, #kiwi16, #kiwi17, #kiwi18 {
+//   fill: pink;
+//   fillcolor: pink;
+//   stroke-opacity: 0;
+//   stroke:red;
+//     cursor: pointer;
+// }
+// .kiwi,
+#kiwi1:hover,
+#kiwi2:hover,
+#kiwi3:hover,
+#kiwi4:hover,
+#kiwi5:hover,
+#kiwi6:hover,
+#kiwi7:hover,
+#kiwi8:hover,
+#kiwi9:hover,
+#kiwi10:hover,
+#kiwi13:hover,
+#kiwi14:hover,
+#kiwi15:hover,
+#kiwi16:hover,
+#kiwi17:hover,
+#kiwi18:hover {
+    cursor: pointer;
+    user-select: none;
+}
+#svg {
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+    top: 40px;
+}
+
+#luga {
+    position: absolute;
+    top: 568px;
+    left: 50%;
+    margin-left: -200px;
+}
+
+#boksi {
+    position: absolute;
+    top: 418px;
+    left: 50%;
+    margin-left: 230px;
+}
+
+#svetlo {
+    position: absolute;
+    top: 103px;
+    left: 50%;
+    margin-left: -295px;
+}
+
+#viborg {
+    position: absolute;
+    top: 178px;
+    left: 50%;
+    margin-left: -310px;
+}
+
+#gatchina {
+    position: absolute;
+    top: 388px;
+    left: 50%;
+    margin-left: -183px;
+}
+
+#ivan {
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    margin-left: -352px;
+}
+
+#kingi {
+    position: absolute;
+    top: 446px;
+    left: 50%;
+    margin-left: -318px;
+}
+
+#volosovo {
+    position: absolute;
+    top: 410px;
+    left: 50%;
+    margin-left: -267px;
+}
+
+#kirishi {
+    position: absolute;
+    top: 418px;
+    left: 50%;
+    margin-left: 20px;
+}
+
+#kirovsk {
+    position: absolute;
+    top: 328px;
+    left: 50%;
+    margin-left: -57px;
+}
+
+#kolpino {
+    position: absolute;
+    top: 368px;
+    left: 50%;
+    margin-left: -100px;
+}
+
+#lomon {
+    position: absolute;
+    top: 317px;
+    left: 50%;
+    margin-left: -290px;
+}
+
+#otrad {
+    position: absolute;
+    top: 348px;
+    left: 50%;
+    margin-left: -70px;
+}
+
+#petrodvor {
+    position: absolute;
+    top: 325px;
+    left: 50%;
+    margin-left: -208px;
+}
+
+#podpor {
+    position: absolute;
+    top: 143px;
+    left: 50%;
+    margin-left: 285px;
+}
+
+#priozer {
+    position: absolute;
+    top: 93px;
+    left: 50%;
+    margin-left: -205px;
+}
+
+#pushkin {
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    margin-left: -115px;
+}
+
+#sestror {
+    position: absolute;
+    top: 290px;
+    left: 50%;
+    margin-left: -170px;
+}
+
+#slanci {
+    position: absolute;
+    top: 490px;
+    left: 50%;
+    margin-left: -362px;
+}
+
+#tihvin {
+    position: absolute;
+    top: 388px;
+    left: 50%;
+    margin-left: 190px;
+}
+
+#volhov {
+    position: absolute;
+    top: 323px;
+    left: 50%;
+    margin-left: 85px;
+}
+
+#vsevol {
+    position: absolute;
+    top: 318px;
+    left: 50%;
+    margin-left: -105px;
+}
+
+#zelen {
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    margin-left: -185px;
+}
+.mtkiwi1 {
+    top: 368px;
+    margin-left: -180px;
+}
+.mtkiwi2 {
+    top: 388px;
+    margin-left: -1px;
+}
+.mtkiwi3 {
+    top: 368px;
+    margin-left: -100px;
+}
+.mtkiwi4 {
+    top: 298px;
+    margin-left: -100px;
+}
+.mtkiwi5 {
+    top: 348px;
+    margin-left: -170px;
+}
+.mtkiwi6 {
+    top: 70px;
+    margin-left: -150px;
+}
+.mtkiwi7 {
+    top: 220px;
+    margin-left: 140px;
+}
+.mtkiwi8 {
+    top: 310px;
+    margin-left: -50px;
+}
+.mtkiwi9 {
+    top: 270px;
+    margin-left: 30px;
+}
+.mtkiwi10 {
+    top: 270px;
+    margin-left: -100px;
+}
+.mtkiwi11 {
+    top: 170px;
+    margin-left: 50px;
+}
+.mtkiwi12 {
+    top: 170px;
+    margin-left: 230px;
+}
+.mtkiwi13 {
+    top: 170px;
+    margin-left: -50px;
+}
+.mtkiwi14 {
+    top: 60px;
+    margin-left: -80px;
+}
+.mtkiwi15 {
+    top: 270px;
+    margin-left: -100px;
+}
+.mtkiwi16 {
+    top: 230px;
+    margin-left: -180px;
+}
+.mtkiwi17 {
+    top: 70px;
+    margin-left: -100px;
+}
+.mtkiwi18 {
+    top: 70px;
+    margin-left: -30px;
+}
+#tmod {
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    display: none;
+    width: 270px;
+    padding: 10px;
+    opacity: .8;
+    border-radius: 8px;
+    background: #000;
+}
+.zag {
+    font-size: 14px;
+    text-align: left;
+    color: $brand-color;
+}
+.text {
+    font-size: 12px;
+    color: #fff;
+}
+#slovo {
+    font-size: 10px;
+    font-weight: 100;
+    width: 90px;
+    margin-top: 20px;
+    margin-top: 85px;
+    color: #000;
+}
+.divmod {
+    display: none;
+}
+.mt0 {
+    display: none;
+}

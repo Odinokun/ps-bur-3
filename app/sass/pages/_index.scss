@@ -2,6 +2,8 @@
 .header__top {
     text-align: right;
     background-color: $brand-color;
+    min-width: 1160px;
+
 }
 .header__top-adress {
     &::after {
@@ -121,6 +123,7 @@
 // === navigation ===
 .navigation {
     background-color: #333236;
+    min-width: 1160px;
 }
 .navigation__list {
     margin: 0;
@@ -158,26 +161,28 @@
 /*===== top__section =====*/
 .top__section {
     position: relative;
+    min-width: 1160px;
     height: 510px;
-    background: url('../img/bg-top-section.jpg') 50% 50% no-repeat;
     text-align: center;
+    background: url('../img/bg-top-section.jpg') 50% 50% no-repeat;
     &::before {
-        content: "";
         display: inline-block;
         height: 100%;
+        content: '';
         vertical-align: middle;
     }
 }
 .top__section-banner {
     display: inline-block;
-    vertical-align: middle;
     text-align: center;
+    vertical-align: middle;
 }
 .banner__text-big,
 .banner__text-small {
-    @include opensans(bold);
     font-weight: 400;
     color: #fff;
+
+    @include opensans(bold);
     span {
         color: $brand-color;
     }
@@ -190,12 +195,136 @@
     font-size: 36px;
     line-height: 36px;
 }
-
 /*===== /top__section =====*/
-.map {
-    display: none; //temp
+
+
+/*===== map__section =====*/
+.map__section {
+    @include clearfix;
+    min-width: 1160px;
 }
+.map__header {
+    background-color: #333236;
+}
+.map__controls-list {
+    width: 800px;
+    margin: 0 auto;
+}
+.map__controls-item {
+    display: inline-block;
+    width: 50%;
+    margin-right: -5px;
+    text-align: center;
+    &.active {
+        .map__controls-link {
+            transition: .5s;
+            color: #fff;
+            border: 2px solid $brand-color;
+        }
+    }
+    &:hover {
+        .map__controls-link {
+            transition: .5s;
+            color: $brand-color;
+        }
+    }
+}
+.map__controls-link {
+    font-size: 18px;
+    display: inline-block;
+    margin: 5px 0;
+    padding: 5px 35px;
+    transition: .5s;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid transparent;
+
+    @include opensans(bold);
+}
+
+.map__item_02 {
+    height: 700px;//temp
+    background-color: pink;//temp
+}
+
+
+
+
+
+.map__item {
+    display: none;
+    position: relative;
+    &.active {
+        display: block;
+    }
+}
+/*===== /map__section =====*/
+
+
+/*===== advantage =====*/
+.advantage__section {
+    background-color: #333236;
+    min-width: 1160px;
+    .section__header {
+        background-color: #fff;
+    }
+    .container {
+        padding: 50px 20px;
+    }
+}
+.advantage__item {
+    display: inline-block;
+    width: 25%;
+    margin-right: -5px;
+    vertical-align: middle;
+}
+.advantage__pic,
+.advantage__text {
+    display: inline-block;
+    vertical-align: middle;
+}
+.advantage__pic {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    background-color: $brand-color;
+    img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        max-width: 90%;
+        max-height: 90%;
+    }
+}
+.advantage__text {
+    width: 180px;
+    color: #fff;
+    padding: 0 20px;
+}
+.advantage__text-big {
+    padding: 5px 0;
+    font-size: 18px;
+    @include opensans(bold);
+text-transform: uppercase;
+span {
+    font-size: 24px;
+}
+}
+.advantage__text-small {
+    padding: 5px 0;
+    font-size: 12px;
+    line-height: 14px;
+}
+/*===== /advantage =====*/
+
+/*===== temp =====*/
+/*===== /temp =====*/
 .temp {
     height: 1000px;
     background-color: #00c;
+    min-width: 1160px;
 }

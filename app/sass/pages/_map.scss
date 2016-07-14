@@ -6,6 +6,7 @@
     float: left;
     width: 100%;
     height: 838px;
+    height: 798px;
     background: url(images/bg_map_deeps.jpg) no-repeat top center;
     background-size: cover;
 }
@@ -19,6 +20,7 @@
 
 .map_deeps_content > .title {
     display: inline-block;
+    display: none;
     width: 100%;
     margin-top: 70px;
     text-align: left;
@@ -65,40 +67,41 @@
     float: left;
     width: 100%;
     height: 100%;
+    background-color: #ccc;
 }
 
 
 
 /***************************** codepen **********************************/
 #fl {
-    font-size: 12px;
-    float: left;
-    width: 300px;
-    height: 25px;
-    padding: 40px 0 0 10px;
-    color: pink;
-}
+ width: 300px;
+ float: left;
+ padding: 40px 0px 0px 10px;
+ color: pink;
+ height: 25px;
+ font-size: 12px;
+ }
 #fr {
-    font-size: 12px;
-    float: right;
-    width: 300px;
-    padding: 30px 0 0 0;
-    text-align: right;
-    color: pink;
-}
+ width: 300px;
+ float: right;
+ text-align: right;
+ padding: 30px 0px 0px 0px;
+ color: pink;
+ font-size: 12px;
+ }
 .fbimg {
-    padding: 15px;
+  padding: 15px;
 }
 #footer a {
-    padding-top: 4px;
-    color: #pink;
+   color: #pink;
+  padding-top: 4px;
 }
-// #kiwi1, #kiwi2, #kiwi3, #kiwi4, #kiwi5, #kiwi6, #kiwi7, #kiwi8, #kiwi9, #kiwi10, #kiwi11, #kiwi12, #kiwi13, #kiwi14, #kiwi15, #kiwi16, #kiwi17, #kiwi18 {
-//   fill: pink;
-//   fillcolor: pink;
-//   stroke-opacity: 0;
-//   stroke:red;
-// }
+#kiwi1, #kiwi2, #kiwi3, #kiwi4, #kiwi5, #kiwi6, #kiwi7, #kiwi8, #kiwi9, #kiwi10, #kiwi11, #kiwi12, #kiwi13, #kiwi14, #kiwi15, #kiwi16, #kiwi17, #kiwi18 {
+  fill: pink;
+  fillcolor: pink;
+  stroke-opacity: 0;
+  stroke:red;
+}
 
 #kiwi1:hover,
 #kiwi2:hover,
@@ -116,287 +119,289 @@
 #kiwi16:hover,
 #kiwi17:hover,
 #kiwi18:hover {
-    cursor: pointer;
-  // pathcolor: red;
-  // fill: green;
-  // fillcolor: red;
-  // stroke-opacity: 1;
-  // stroke:red !important;
-  // opacity: 0.5;
-  // background-color: green !important;
+  pathcolor: red;
+  fill: green;
+  fillcolor: red;
+  stroke-opacity: 1;
+  stroke:red !important;
+  opacity: 0.5;
+  background-color: green !important;
 }
 #svg {
-    position: absolute;
-    left: 50%;
-    margin-left: -400px;
+  position: absolute;
+  left: 50%;
+  margin-left: -400px;
 }
 
 #luga {
-    position: absolute;
-    top: 748px;
-    left: 50%;
-    margin-left: -200px;
+  position: absolute;
+  top: 748px;
+  left: 50%;
+  margin-left: -200px;
 }
 
 #boksi {
-    position: absolute;
-    top: 598px;
-    left: 50%;
-    margin-left: 230px;
+  position: absolute;
+  top: 598px;
+  left: 50%;
+  margin-left: 230px;
 }
 
 #svetlo {
-    position: absolute;
-    top: 283px;
-    left: 50%;
-    margin-left: -295px;
+  position: absolute;
+  top: 283px;
+  left: 50%;
+  margin-left: -295px;
 }
 
 #viborg {
-    position: absolute;
-    top: 358px;
-    left: 50%;
-    margin-left: -310px;
+  position: absolute;
+  top: 358px;
+  left: 50%;
+  margin-left: -310px;
 }
 
 #gatchina {
-    position: absolute;
-    top: 568px;
-    left: 50%;
-    margin-left: -183px;
+  position: absolute;
+  top: 568px;
+  left: 50%;
+  margin-left: -183px;
 }
 
 #ivan {
-    position: absolute;
-    top: 600px;
-    left: 50%;
-    margin-left: -352px;
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  margin-left: -352px;
 }
 
 #kingi {
-    position: absolute;
-    top: 626px;
-    left: 50%;
-    margin-left: -318px;
+  position: absolute;
+  top: 626px;
+  left: 50%;
+  margin-left: -318px;
 }
 
 #volosovo {
-    position: absolute;
-    top: 590px;
-    left: 50%;
-    margin-left: -267px;
+  position: absolute;
+  top: 590px;
+  left: 50%;
+  margin-left: -267px;
 }
 
 #kirishi {
-    position: absolute;
-    top: 598px;
-    left: 50%;
-    margin-left: 20px;
+  position: absolute;
+  top: 598px;
+  left: 50%;
+  margin-left: 20px;
 }
 
 #kirovsk {
-    position: absolute;
-    top: 508px;
-    left: 50%;
-    margin-left: -57px;
+  position: absolute;
+  top: 508px;
+  left: 50%;
+  margin-left: -57px;
 }
 
 #kolpino {
-    position: absolute;
-    top: 548px;
-    left: 50%;
-    margin-left: -100px;
+  position: absolute;
+  top: 548px;
+  left: 50%;
+  margin-left: -100px;
 }
 
 #lomon {
-    position: absolute;
-    top: 493px;
-    left: 50%;
-    margin-left: -290px;
+  position: absolute;
+  top: 493px;
+  left: 50%;
+  margin-left: -290px;
 }
 
 #otrad {
-    position: absolute;
-    top: 528px;
-    left: 50%;
-    margin-left: -70px;
+  position: absolute;
+  top: 528px;
+  left: 50%;
+  margin-left: -70px;
 }
 
 #petrodvor {
-    position: absolute;
-    top: 501px;
-    left: 50%;
-    margin-left: -208px;
+  position: absolute;
+  top: 501px;
+  left: 50%;
+  margin-left: -208px;
 }
 
 #podpor {
-    position: absolute;
-    top: 323px;
-    left: 50%;
-    margin-left: 285px;
+  position: absolute;
+  top: 323px;
+  left: 50%;
+  margin-left: 285px;
 }
 
 #priozer {
-    position: absolute;
-    top: 273px;
-    left: 50%;
-    margin-left: -205px;
+  position: absolute;
+  top: 273px;
+  left: 50%;
+  margin-left: -205px;
 }
 
 #pushkin {
-    position: absolute;
-    top: 560px;
-    left: 50%;
-    margin-left: -115px;
+  position: absolute;
+  top: 560px;
+  left: 50%;
+  margin-left: -115px;
 }
 
 #sestror {
-    position: absolute;
-    top: 470px;
-    left: 50%;
-    margin-left: -175px;
+  position: absolute;
+  top: 470px;
+  left: 50%;
+  margin-left: -175px;
 }
 
 #slanci {
-    position: absolute;
-    top: 670px;
-    left: 50%;
-    margin-left: -362px;
+  position: absolute;
+  top: 670px;
+  left: 50%;
+  margin-left: -362px;
 }
 
 #tihvin {
-    position: absolute;
-    top: 568px;
-    left: 50%;
-    margin-left: 190px;
+  position: absolute;
+  top: 568px;
+  left: 50%;
+  margin-left: 190px;
 }
 
 #volhov {
-    position: absolute;
-    top: 503px;
-    left: 50%;
-    margin-left: 85px;
+  position: absolute;
+  top: 503px;
+  left: 50%;
+  margin-left: 85px;
 }
 
 #vsevol {
-    position: absolute;
-    top: 498px;
-    left: 50%;
-    margin-left: -105px;
+  position: absolute;
+  top: 498px;
+  left: 50%;
+  margin-left: -105px;
 }
 
 #zelen {
-    position: absolute;
-    top: 450px;
-    left: 50%;
-    margin-left: -185px;
+  position: absolute;
+  top: 450px;
+  left: 50%;
+  margin-left: -185px;
 }
-.mtkiwi1 {
-    top: 548px;
-    margin-left: -180px;
+.mtkiwi1{
+top:548px;
+margin-left:-180px;
 }
-.mtkiwi2 {
-    top: 568px;
-    margin-left: -1px;
+.mtkiwi2{
+top:568px;
+margin-left:-1px;
 }
-.mtkiwi3 {
-    top: 548px;
-    margin-left: -100px;
+.mtkiwi3{
+top:548px;
+margin-left:-100px;
 }
-.mtkiwi4 {
-    top: 478px;
-    margin-left: -100px;
+.mtkiwi4{
+top:478px;
+margin-left:-100px;
 }
-.mtkiwi5 {
-    top: 528px;
-    margin-left: -170px;
+.mtkiwi5{
+top:528px;
+margin-left:-170px;
 }
-.mtkiwi6 {
-    top: 250px;
-    margin-left: -150px;
+.mtkiwi6{
+top:250px;
+margin-left:-150px;
 }
-.mtkiwi7 {
-    top: 400px;
-    margin-left: 140px;
+.mtkiwi7{
+top:400px;
+margin-left:140px;
 }
-.mtkiwi8 {
-    top: 490px;
-    margin-left: -50px;
+.mtkiwi8{
+top:490px;
+margin-left:-50px;
 }
-.mtkiwi9 {
-    top: 450px;
-    margin-left: 30px;
+.mtkiwi9{
+top:450px;
+margin-left:30px;
 }
-.mtkiwi10 {
-    top: 450px;
-    margin-left: -100px;
+.mtkiwi10{
+top:450px;
+margin-left:-100px;
 }
-.mtkiwi11 {
-    top: 350px;
-    margin-left: 50px;
+.mtkiwi11{
+top:350px;
+margin-left:50px;
 }
-.mtkiwi12 {
-    top: 350px;
-    margin-left: 230px;
+.mtkiwi12{
+top:350px;
+margin-left:230px;
 }
-.mtkiwi13 {
-    top: 350px;
-    margin-left: -50px;
+.mtkiwi13{
+top:350px;
+margin-left:-50px;
 }
-.mtkiwi14 {
-    top: 240px;
-    margin-left: -80px;
+.mtkiwi14{
+top:240px;
+margin-left:-80px;
 }
-.mtkiwi15 {
-    top: 450px;
-    margin-left: -100px;
+.mtkiwi15{
+top:450px;
+margin-left:-100px;
 }
-.mtkiwi16 {
-    top: 410px;
-    margin-left: -180px;
+.mtkiwi16{
+top:410px;
+margin-left:-180px;
 }
-.mtkiwi17 {
-    top: 250px;
-    margin-left: -100px;
+.mtkiwi17{
+top:250px;
+margin-left:-100px;
 }
-.mtkiwi18 {
-    top: 250px;
-    margin-left: -30px;
+.mtkiwi18{
+top:250px;
+margin-left:-30px;
 }
-#tmod {
-    font-weight: bold;
-    position: absolute;
-    left: 50%;
-    display: none;
-    width: 270px;
-    padding: 10px;
-    opacity: .8;
-    border-radius: 8px;
-    background: #000;
+#tmod{
+left:50%;
+font-weight:bold;
+display:none;
+position:absolute;
+background:#000000;
+border-radius:8px;
+opacity:0.8;
+width:270px;
+padding:10px;
 }
-.zag {
-    font-size: 14px;
-    text-align: left;
-    color: #00aeff;
+.zag{
+font-size:14px;
+color:#00aeff;
+text-align:left;
 }
-hr {
-    color: #00aeff;
+hr{
+color:#00aeff;
 }
-.text {
-    font-size: 12px;
-    color: #fff;
+.text{
+
+font-size:12px;
+color:#ffffff;
 }
-#slovo {
-    font-family: arial;
-    font-size: 10px;
-    font-weight: 100;
-    width: 90px;
-    margin-top: 85px;
-    color: green;
+#slovo{
+font-family:arial;
+width:90px;
+font-size:10px;
+color:green;
+font-weight:100;
+margin-top: 85px;
+
 }
-.divmod {
-    display: none;
+.divmod{
+display:none;
 }
-.mt0 {
-    display: none;
+.mt0{
+display:none;
 }
+

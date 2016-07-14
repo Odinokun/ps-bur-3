@@ -1,16 +1,27 @@
+// tabs in  map__section
 $(function() {
-    console.log("Hasta la vista, baby");
-})
+    // console.log("Hasta la vista, baby");
+    $('.map__controls-link').on('click', function(e){
+        e.preventDefault();
 
-$(window).load(function() {
-  $('#featured').orbit();
+        var item = $(this).closest('.map__controls-item'),
+            contentItem = $('.map__item'),
+            itemPosition = item.data('class');
+
+        contentItem.filter('.map__item_' + itemPosition)
+            .add(item)
+            .addClass('active')
+            .siblings()
+            .removeClass('active');
+    });
 });
 
+// svg map
 $(document).ready(function() {
   $("[id ^= kiwi]").hover(function() {
       var col = $(this).attr("id");
 
-      $("[id = " + col + "]").css('fill', '#00aeff');
+      $("[id = " + col + "]").css('fill', '#f28943');
       $("#tmod").empty();
       $('#tmod')[0].className = '';
       $("#tmod").addClass("mt" + col + "");
@@ -29,7 +40,7 @@ $(document).ready(function() {
 
   $("[class ^= kiwi]").hover(function() {
       var col = $(this).attr("class");
-      $("[id = " + col + "]").css('fill', '#00aeff');
+      $("[id = " + col + "]").css('fill', '#f28943');
       $("#tmod").empty();
       $('#tmod')[0].className = '';
       $("#tmod").addClass("mt" + col + "");
