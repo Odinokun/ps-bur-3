@@ -27,7 +27,7 @@ $('.pagination__item').click(function(e) {
 
 
 
-// svg map
+// svg map - price
 $(document).ready(function() {
   $("[id ^= kiwi]").hover(function() {
       var col = $(this).attr("id");
@@ -65,6 +65,49 @@ $(document).ready(function() {
       $("[id = " + col + "]").css('fill', '#b0b0b0');
       $("#tmod").removeClass("mt" + col + "");
       $("#tmod").addClass("divmod");
+    });
+});
+
+
+
+// svg map - geo
+$(document).ready(function() {
+  $("[id ^= kiiwi]").hover(function() {
+      var col = $(this).attr("id");
+
+      $("[id = " + col + "]").css('fill', '#f28943');
+      $("#tmood").empty();
+      $('#tmood')[0].className = '';
+      $("#tmood").addClass("mt" + col + "");
+      $("[id = t" + col + "]").find('div').clone().appendTo("#tmood");
+      $("#tmood").removeClass("diivmod");
+      $("#tmood").slideDown(2);
+    },
+    function() {
+      var col = $(this).attr("id");
+      $("[id != " + col + "]").css('fill', '#b0b0b0');
+      $("[id = " + col + "]").css('fill', '#b0b0b0');
+      $("#tmood").removeClass("mt" + col + "");
+      $("#tmood").addClass("diivmod");
+
+    });
+
+  $("[class ^= kiiwi]").hover(function() {
+      var col = $(this).attr("class");
+      $("[id = " + col + "]").css('fill', '#f28943');
+      $("#tmood").empty();
+      $('#tmood')[0].className = '';
+      $("#tmood").addClass("mt" + col + "");
+      $("[id = t" + col + "]").find('div').clone().appendTo("#tmood");
+      $("#tmood").removeClass("diivmod");
+      $("#tmood").slideDown(2);
+    },
+    function() {
+      var col = $(this).attr("id");
+      $("[id != " + col + "]").css('fill', '#b0b0b0');
+      $("[id = " + col + "]").css('fill', '#b0b0b0');
+      $("#tmood").removeClass("mt" + col + "");
+      $("#tmood").addClass("diivmod");
     });
 });
 
