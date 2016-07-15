@@ -41,7 +41,6 @@
     }
 }
 .header__middle-container {
-    margin-bottom: -20px;
     text-align: justify;
     &::after {
         display: inline-block;
@@ -121,6 +120,7 @@
 }
 // === navigation ===
 .navigation {
+    margin-top: -20px;
     min-width: 1160px;
     background-color: #333236;
 }
@@ -212,8 +212,7 @@
 }
 .map__controls-item {
     display: inline-block;
-    width: 50%;
-    margin-right: -5px;
+    width: 49%;
     text-align: center;
     &.active {
         .map__controls-link {
@@ -265,7 +264,7 @@
 }
 .advantage__item {
     display: inline-block;
-    width: 25%;
+    width: 24.5%;
     margin-right: -5px;
     vertical-align: middle;
 }
@@ -383,7 +382,7 @@
     vertical-align: middle;
 }
 .why__we-item {
-    width: 80%;
+    width: 79%;
     padding: 50px 50px 50px 0;
     color: #fff;
 }
@@ -411,7 +410,7 @@
 }
 .info__section-item {
     display: inline-block;
-    width: 50%;
+    width: 49.5%;
     margin: 5px -5px 5px 0;
     vertical-align: top;
 }
@@ -536,7 +535,7 @@
     background-color: #333236;
     .contacts__item {
         display: inline-block;
-        width: 280px;
+        width: 270px;
         margin-right: -5px;
         padding-right: 20px;
         &.contacts__item-btn {
@@ -604,6 +603,7 @@
     }
 }
 .copyright {
+    font-size: 14px;
     min-width: 1160px;
     padding: 5px 0;
     text-align: center;
